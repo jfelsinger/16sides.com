@@ -1,0 +1,24 @@
+{
+    "name": "16sides",
+    "version": "0.0.0",
+    "dependencies": {
+        "vue": null,
+        "jquery": null,
+        "json3": null,
+        "es5-shim": null
+    },
+    "exportsOverride": {
+        "vue": {
+            "vendor": "dist/vue*.js"
+        },
+        "jquery": {
+            "vendor": "jquery.min.js"
+        },
+        "json3": {
+            "vendor": "**/*.js"
+        },
+        "es5-shim": {
+            "vendor": "*.js"
+        }
+    }
+}
