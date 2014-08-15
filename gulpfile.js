@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    clean = require('gulp-clean'),
+    rimraf = require('gulp-rimraf'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload');
 
