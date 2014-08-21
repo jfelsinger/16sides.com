@@ -1,0 +1,11 @@
+name: 
+markdown: redcarpet
+pygments: true
+excerpt_separator: "<!-- ==== -->"
+exclude:
+  - package.json
+    gulpfile.js
+    node_modules
+    bower_components
+    bower.json
+    test

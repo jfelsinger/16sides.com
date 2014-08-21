@@ -24,13 +24,20 @@
  * Name Pattern:
  *  c-[name]--[modifier]
  * 
- */ 
+ */
  
 
 
 /*-------------------------------------*\
     Base Colors
 \*-------------------------------------*/
+
+$c-gray--light:     #3c3c3c;
+$c-gray:            #221f1f;
+$c-gray--dark:      #151414;
+$c-gray--darker:    #0f0f0f;
+
+$c-pink:            #d2959e;
 
 
 
@@ -40,5 +47,5 @@
     Site Colors
 \*-------------------------------------*/
 
-$c-text:   #000; 
-$c-body:   #fff; 
+$c-text:   #fff; 
+$c-body:   #000;
