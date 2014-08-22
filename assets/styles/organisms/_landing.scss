@@ -1,0 +1,105 @@
+/*-------------------------------------*\
+    Landing
+\*-------------------------------------*/
+
+/**
+ * Landing 
+ * 
+ * base
+ * implementation
+ * 
+    
+ * 
+ */ 
+ 
+
+
+/*-------------------------------------*\
+    Base
+\*-------------------------------------*/
+
+%landing {
+    height: 100vh;
+    border-bottom: 2px solid $c-pink;
+    // background: #3e3e3e;
+    background: url(../images/background/layer-3.png) no-repeat center center;
+    z-index: -1;
+}
+
+    %landing__layer {
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    %landing__deep {
+        @extend %landing__layer !optional;
+        background: url(../images/background/cleared-bg.png) no-repeat center center;
+    }
+
+    %landing__back {
+        @extend %landing__layer !optional;
+        background: url(../images/background/layer-1.png) no-repeat center center;
+    }
+
+    %landing__base {
+        @extend %landing__layer !optional;
+        background: url(../images/background/layer-2.png) no-repeat center center;
+    }
+
+    %landing__tagline {
+        font-size: 6vh;
+        padding-top: 30%;
+    }
+
+        %landing__tagline__section {
+            display: block;
+        }
+
+        %landing__tagline__highlight {
+            color: #000;
+            font-family: 'open-sans-bold';
+            font-weight: 700;
+            font-size: 13vh;
+            line-height: 1;
+            position: relative;
+
+            background: #fff;
+
+            // &:before {
+            //     content: "";
+            //     width: 100%;
+            //     height: 12vh;
+            //     background: #fff;
+            //     display: block;
+
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            // }
+        }
+
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.landing { @extend %landing !optional; }
+
+    .landing__deep { @extend %landing__deep !optional; }
+    .landing__back { @extend %landing__back !optional; }
+    .landing__base { @extend %landing__base !optional; }
+
+    .landing__tagline { @extend %landing__tagline !optional; }
+
+        .tagline__section  { @extend %landing__tagline__section !optional; }
+
+        .tagline__highlight { @extend %landing__tagline__highlight !optional; }
+
+
+
+
+

@@ -22,77 +22,103 @@
     <!--
     -->
 <body>
-    <header class="site__header">
-        <a href="/" class="site__header__logo">
-            <img src="">
-        </a>
+    <div class="parallax">
+        <!--
+        <header class="site__header">
+            <a href="/" class="site__header__logo">
+                <img src="">
+            </a>
 
-        <nav class="site__header__nav">
-            <ul class="">
-                <li><a href="/services">Services</a>
-                <li><a href="/about">About</a>
-                <li><a href="/contact">Contact</a>
-            </ul>
-        </nav>
-    </header>
+            <nav class="site__header__nav">
+                <ul class="">
+                    <li><a href="/services">Services</a>
+                    <li><a href="/about">About</a>
+                    <li><a href="/contact">Contact</a>
+                </ul>
+            </nav>
+        </header>
+        -->
 
-    <section class="landing">
-        <h1 class="landing__tagline">
-            A Web
-            <span class="">Experience</span>
-            <span class="align-right">Company</span>
-        </h1>
+        <section class="landing  parallax__group">
 
-        <div>
-            <a href="#">Work With Us</a>
-            <a href="#">Learn More</a>
-        </div>
-    </section>
+            <div class="
+                wrapper
+                parallax__layer  
+                parallax__layer--base  
+                landing__base ">
 
-    <section>
-        <h2>Services</h2>
+                <h1 class="landing__tagline">
+                    A Web
+                    <span class="tagline__section  tagline__highlight  align-center">Experience</span>
+                    <span class="tagline__section  align-right">Company</span>
+                </h1>
 
-        <h3 class="align-right">
-            SEO &amp; Content Strategy
-        </h3>
+                <div>
+                    <a href="#">Work With Us</a>
+                    <a href="#">Learn More</a>
+                </div>
+            </div><!-- wrapper -->
 
-        <p>
-            Lorem Ipsum
-        <p>
-            Lorem Ipsum dolor sit amet.
+            <div class="
+                parallax__layer  
+                parallax__layer--back
+                landing__back"></div>
 
-        <h3 class="align-right">
-            Design &amp; Development
-        </h3>
+            <div class="
+                parallax__layer  
+                parallax__layer--deep
+                landing__deep"></div>
 
-        <p>
-            Lorem Ipsum
-        <p>
-            Lorem Ipsum dolor sit
+        </section><!-- landing --> 
 
-    </section>
+        <section class="content-section  slab--gray--dark">
+            <div class="wrapper">
+                <h2 class="content-section__heading  one-line">Services</h2>
 
-    <section>
-        <h2>About</h2>
-    </section>
+                <h3 class="align-right">
+                    SEO &amp; Content Strategy
+                </h3>
 
-    <section>
-        <h2>Contact</h2>
+                <p>
+                    Lorem Ipsum
+                <p>
+                    Lorem Ipsum dolor sit amet.
 
-        <form>
-            <label class="" for="Contact_Name">Name</label>
-            <input name="name" id="Contact_Name" class="">
+                <h3 class="align-right">
+                    Design &amp; Development
+                </h3>
 
-            <label class="" for="Contact_Email">Email</label>
-            <input type="email" name="email" id="Contact_Email" class="">
-        </form>
+                <p>
+                    Lorem Ipsum
+                <p>
+                    Lorem Ipsum dolor sit
 
-        
-    </section>
+            </div>
+        </section>
+        <!--
 
-    <footer>
-    </footer>
+        <section class="parallax__group">
+            <h2>About</h2>
+        </section>
 
-    <!-- Scripts -->
+        <section class="parallax__group">
+            <h2>Contact</h2>
+
+            <form>
+                <label class="" for="Contact_Name">Name</label>
+                <input name="name" id="Contact_Name" class="">
+
+                <label class="" for="Contact_Email">Email</label>
+                <input type="email" name="email" id="Contact_Email" class="">
+            </form>
+
+            
+        </section>
+
+        <footer>
+        </footer>
+
+        <!-- Scripts -->
+    </div><!-- parallax -->
 </body>
 </html>

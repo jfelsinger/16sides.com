@@ -1,0 +1,57 @@
+/*-------------------------------------*\
+    Content-Section
+\*-------------------------------------*/
+
+/**
+ * Content Section 
+ * 
+ * Base
+ * Implementation
+ * 
+
+ * 
+ */ 
+ 
+
+
+/*-------------------------------------*\
+    Base
+\*-------------------------------------*/
+
+%content-section {
+    border-bottom: 16px solid $c-gray--light;
+
+    h3 {
+        font-size: 3.5vmax;
+        line-height: 1.18;
+        width: 55%;
+    }
+
+    p {
+        width: 50%;
+        margin-left: 50%;
+    }
+}
+
+    %content-section__heading {
+        color: $c-gray--light;
+        font-family: 'open-sans-bold';
+        font-size: 8vmax;
+        font-weight: 800;
+    }
+ 
+
+
+
+
+/*-------------------------------------*\
+    Implementation
+\*-------------------------------------*/
+
+.content-section { @extend %content-section !optional; }
+    .content-section__heading { @extend %content-section__heading !optional; }
+ 
+
+ 
+
+

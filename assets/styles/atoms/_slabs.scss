@@ -24,6 +24,22 @@
     background: $c-body;
 }
 
+%slab--gray {
+    background: $c-gray;
+}
+
+    %slab--gray--light {
+        background: $c-gray--light;
+    }
+
+    %slab--gray--dark {
+        background: $c-gray--dark;
+    }
+
+    %slab--gray--darker {
+        background: $c-gray--darker;
+    }
+
 
 
 
@@ -41,6 +57,11 @@
 \*-------------------------------------*/
 
 .slab--default { @extend %slab--default !optional; }
+
+.slab--gray { @extend %slab--gray !optional; }
+.slab--gray--light { @extend %slab--gray--light !optional; }
+.slab--gray--dark { @extend %slab--gray--dark !optional; }
+.slab--gray--darker { @extend %slab--gray--darker !optional; }
 
 
 

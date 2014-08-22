@@ -13,7 +13,7 @@
  * 
  */ 
 
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 1.618;
 $max-site-width: 960px;
 
@@ -24,7 +24,10 @@ $unit: $base-font-size * $base-line-height;
 }
 
 
-* { @include box-sizing(border-box); }
+* { 
+    margin-top: 0;
+    @include box-sizing(border-box); 
+}
 
  
 body {
@@ -40,6 +43,8 @@ body {
 
     %wrapper {
         text-align: left;
+        margin-left: auto;
+        margin-right: auto;
         max-width: $max-site-width;
     }
         .wrapper { @extend %wrapper; }
@@ -53,4 +58,4 @@ body {
     %one-line {
         margin-bottom: 0;
     }
-        .one-line { @extend %scroll-fix; }
+        .one-line { @extend %one-line; }
